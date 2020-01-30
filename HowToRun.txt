@@ -1,0 +1,7 @@
+I have used top-down approach to get to the solution. I also performed Kmeans to group the properties sharing common features. I took all the combination of Test Data file acccount ids and performed cartesian product with the unsold properties ids. Using StratifiedKFold I divided the latter generated file into 10 output files and then chose the best output file and again performed the StratifiedKFold and got 5 output files and then chose the best output file and performed this again and again to get the best output files. I concatenated the best files and removed duplicated rows.
+
+Sequence to run the files:-
+1) Cleaning_accounts_properties
+2) DBSCAN
+3) RandomForest
+4) Combine
